@@ -1,10 +1,11 @@
 # Navigation Component Codelab
 
-<aside>
-📢 **목표 : 코드랩 진행 및 내용 정리**
-[https://developer.android.com/codelabs/android-navigation?index=..%2F..%2Findex&hl=ko#0](https://developer.android.com/codelabs/android-navigation?index=..%2F..%2Findex&hl=ko#0)
+## 목표
 
-</aside>
+- 코드랩 진행
+- 탐색 구성요소 내용 정리
+
+---
 
 탐색 아키텍처 구성요소는 탐색 구현을 간소화하면서 개발자가 앱의 탐색 흐름을 시각화하는데 도움을 준다. 이 라이브러리는 아래와 같은 이점들을 제공한다.
 
@@ -15,6 +16,7 @@
 - 추가 작업 없이 탐색 UI 패턴 구현(예: 탐색 창과 하단 탐색 메뉴)
 - 탐색 중에 정보를 전달할 때 유형 안정성
 - 앱의 탐색 흐름을 시각화하고 수정하는 Android 스튜디오 도구
+
 
 ## 탐색 개요
 

@@ -2,7 +2,7 @@
 
 ## 목표
 
-- 코드랩 진행
+- [코드랩 진행](https://developer.android.com/codelabs/android-navigation?index=..%2F..%2Findex&hl=ko#3)
 - 탐색 구성요소 내용 정리
 
 ---

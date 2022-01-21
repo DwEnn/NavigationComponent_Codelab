@@ -29,9 +29,9 @@ import androidx.navigation.navOptions
  */
 class HomeFragment : Fragment() {
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         setHasOptionsMenu(true)
         return inflater.inflate(R.layout.home_fragment, container, false)
@@ -47,9 +47,9 @@ class HomeFragment : Fragment() {
 //            findNavController().navigate(R.id.flow_step_one_dest, null)
 //        }
 //        // using Navigation.createNavigateOnClickListener()
-//        button?.setOnClickListener {
+//        button?.setOnClickListener(
 //            Navigation.createNavigateOnClickListener(R.id.flow_step_one_dest, null)
-//        }
+//        )
 
         //TODO END STEP 5
 
@@ -68,9 +68,8 @@ class HomeFragment : Fragment() {
         //TODO END STEP 6
 
         //TODO STEP 7.2 - Update the OnClickListener to navigate using an action
-        view.findViewById<Button>(R.id.navigate_action_button)?.setOnClickListener {
-            Navigation.createNavigateOnClickListener(R.id.next_action, null)
-        }
+        view.findViewById<Button>(R.id.navigate_action_button)
+            ?.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.next_action, null))
         //TODO END STEP 7.2
     }
 

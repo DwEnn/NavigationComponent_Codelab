@@ -17,6 +17,7 @@
 package com.example.android.codelabs.navigation
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,7 +34,38 @@ class SettingsFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        Log.d(">>>", "onCreateView()")
         return inflater.inflate(R.layout.settings_fragment, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Log.d(">>>", "onViewCreated()")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(">>>", "onStart()")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(">>>", "onResume()")
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        Log.d(">>>", "onDetach()")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(">>>", "onDestroy()")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d(">>>", "onDestroyView()")
     }
 
 }

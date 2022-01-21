@@ -75,6 +75,12 @@ class MainActivity : AppCompatActivity() {
                 Integer.toString(destination.id)
             }
 
+            if (destination.id == R.id.shopping_dest) {
+                supportActionBar?.setDisplayShowTitleEnabled(false)
+            } else {
+                supportActionBar?.setDisplayShowTitleEnabled(true)
+            }
+
             Toast.makeText(this@MainActivity, "Navigated to $dest",
                     Toast.LENGTH_SHORT).show()
             Log.d("NavigationActivity", "Navigated to $dest")

@@ -60,7 +60,7 @@
 
         <action
                 android:id="@+id/next_action"
-                app:popUpTo="@+id/flow_step_one_dest"/>
+                app:popUpTo="@id/home_dest" />
     </fragment>
 
     <!-- TODO STEP 4 Create a new navigation destination pointing to SettingsFragment -->

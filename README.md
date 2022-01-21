@@ -178,6 +178,34 @@ findNavController().navigate(R.id.flow_step_one_dest)
 </aside>
 
 
+### enter/exit, popEnter/popExit 애니메이션의 차이
+
+간단한 예로 확인해 보자.
+
+Fragment A 를 Fragment B 로 replace
+
+- Fragment B  `enter` anim
+- Fragment A `exit` anim
+
+백 버튼을 눌러 replace 실행을 취소
+
+- Fragment B `popExit` anim
+- Framgnet A `popEnter` anim
+
+**그렇다면 이제 컨테이너가 이미 fragment 를 가지고 있는 경우와 아닌 경우에 대해 알아보자.**
+
+Fragment 0 이라는 fragment 를 컨테이너가 가지고 있는 상황 → Fagment A 로 replace 작업 실행
+
+- Fragment B `popExit` anim
+- Fragment 0 `popEnter` anim
+
+컨테이너가 비어있음 → Fragment A 로 replace 작업 실행
+
+- Fragment B `popExit` anim
+- 컨테이너가 비어있기 때문에 popEnter 애니메이션 실행되지 않음
+
+
+
 
 
 

@@ -7,6 +7,7 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
+import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
 class FragmentTest {
@@ -21,10 +22,11 @@ class FragmentTest {
         onView(withId(R.id.text)).check(ViewAssertions.matches(withText("Home")))
 //        onView(withId(R.id.navigate_destination_button)).perform(ViewActions.click())
 
-        `homeFragment 메뉴 선택`()
+        selectHomFragmentMenu()
     }
 
-    private fun `homeFragment 메뉴 선택`() {
+    @DisplayName("homeFragment 메뉴 선택")
+    private fun selectHomFragmentMenu() {
         val scenario = launchFragmentInContainer<HomeFragment>()
         scenario.onFragment {
             it.onDestroy()
@@ -32,7 +34,7 @@ class FragmentTest {
     }
 
     @Test
-    private fun `Dilaog 테스트`() {
+    private fun dialogTest() {
         // Assumes that "MyDialogFragment" extends the DialogFragment class.
         with(launchFragment<HomeFragment>()) {
 //            onFragment { fragment ->

@@ -7,12 +7,14 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.matcher.ViewMatchers
+import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
 class NavigationTest {
 
     @Test
-    fun `HomeFragment next_action dest 이동`() {
+    @DisplayName("HomeFragment next_action dest 이동")
+    fun homeFragmentNextActionDestMove() {
         // Create a TestNavHostController
         val navController = TestNavHostController(
             ApplicationProvider.getApplicationContext()
@@ -34,7 +36,8 @@ class NavigationTest {
     }
 
     @Test
-    fun `HomeFragment NavigationUI 테스트`() {
+    @DisplayName("HomeFragment NavigationUI 테스트")
+    fun homeFragmentNavigationUITest() {
         val navController = TestNavHostController(
             ApplicationProvider.getApplicationContext()
         )

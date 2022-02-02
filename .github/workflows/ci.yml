@@ -47,8 +47,9 @@ jobs:
       run: chmod +x gradlew
     - name: Run unit-test
       run: ./gradlew testDebugUnitTest --continue
-    - name: unit-test result
+    - name: Upload unit-test
       uses: actions/upload-artifact@v2
+      if: ${{ always() }}
       with:
         name: unit-test result
         path: ~/**/build/reports/tests/testDebugUnitTest/index.html

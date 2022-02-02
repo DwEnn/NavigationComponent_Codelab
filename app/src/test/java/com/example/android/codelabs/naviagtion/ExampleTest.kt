@@ -7,6 +7,6 @@ class ExampleTest {
 
     @Test
     fun test() {
-        Assertions.assertEquals(4+4, 4)
+        Assertions.assertEquals(4+4, 8)
     }
 }

@@ -52,5 +52,5 @@ jobs:
       if: ${{ always() }}
       with:
         name: unit-test result
-        path: ~/**/build/reports/tests/testDebugUnitTest/index.html
+        path: app/build/reports/tests/testDebugUnitTest
    
